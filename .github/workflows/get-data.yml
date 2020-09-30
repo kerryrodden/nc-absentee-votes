@@ -31,4 +31,4 @@ jobs:
         run: |
           git add *.csv
           git commit -m "Adding data from $(date +%Y-%m-%d)"
-          git push origin master
+          git push origin main
