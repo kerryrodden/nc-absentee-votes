@@ -21,14 +21,14 @@ jobs:
         run: |
           curl -O https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2020_11_03/absentee_20201103.zip
           unzip absentee_20201103.zip
-      - name: Run Python script to preprocess data
-        run: python preprocess.py
-      - name: Add dated version of aggregated data
-        run: cp absentee_20201103_aggregated.csv absentee_20201103_aggregated_$(date +%Y%m%d).csv
-      - name: Clean up
-        run: rm absentee_20201103.zip absentee_20201103.csv
-      - name: Push changes
-        run: |
-          git add *.csv
-          git commit -m "Adding data from $(date +%Y-%m-%d)"
-          git push origin main
+#      - name: Run Python script to preprocess data
+#        run: python preprocess.py
+#      - name: Add dated version of aggregated data
+#        run: cp absentee_20201103_aggregated.csv absentee_20201103_aggregated_$(date +%Y%m%d).csv
+#      - name: Clean up
+#        run: rm absentee_20201103.zip absentee_20201103.csv
+#      - name: Push changes
+#        run: |
+#          git add *.csv
+#          git commit -m "Adding data from $(date +%Y-%m-%d)"
+#          git push origin main
