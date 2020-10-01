@@ -1,4 +1,4 @@
-# North Carolina Absentee Votes
+# North Carolina Absentee Votes 2020
 
 Aggregated data on absentee ballots returned for the November 2020 election in North Carolina. As of late September, these represent vote-by-mail only, but early voting should also be represented when it starts in mid-October.
 
